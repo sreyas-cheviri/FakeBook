@@ -34,7 +34,6 @@ yarn-error.log*
 .env*
 .env
 
-
 # vercel
 .vercel
 
@@ -42,6 +41,15 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# Prisma generated files
+src/generated/**
+*.js
+!next.config.js
+!postcss.config.js
+!tailwind.config.js
+
+# Keep TypeScript files
+!*.d.ts
 
 node_modules
 .next
